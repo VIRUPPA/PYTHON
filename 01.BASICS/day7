@@ -1,0 +1,44 @@
+
+#inheration,polymorbisum 
+class Animal():
+    def __init__(self,species, age):
+        self.species = species
+        self.age = age
+
+    def make_sound(self):
+        print("Some generic sound")
+
+class Dog(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+        self.name = name
+
+    def make_sound(self):
+        print(self.name + " says Woof!")
+
+def count_down(n):
+    while n >= 0:
+        print(n)
+        n -= 1
+
+def check_even_odd(num):
+    if num % 2 == 0:
+        print(str(num) + " is Even")
+    else:
+        print(str(num) + " is Odd")
+
+#inhertance
+class gear:
+   def __init__(self,name,gold):
+       self.name = name
+       self.gold = gold
+
+   def display(self):
+       print(self.name,self.gold)
+
+class peace(gear):
+    def __init__(self,name,gold):
+        super().__init__(name,gold)
+
+x = peace("long","note")
+x.display()

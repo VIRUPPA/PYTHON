@@ -1,0 +1,225 @@
+#class and objects
+
+class students:
+    def __init__(self,name,speed,colour):
+       self.name = name
+       self.speed = speed
+       self.colour = colour
+    def viruppa(self):
+       print("carname is:",self.name)
+       print("high",self.speed)
+       print("beutiful color is",self.colour)
+car1 = students("adi",120,"red")
+car2 = students("toyato",200,"white")
+car1 = viruppa()
+car2 = viruppa()
+
+#conditional
+a = int(input("Enter a number:"))
+if a >= 18:
+    print("elegible to vote")
+else:
+    print("not elegible")
+
+#inheration,polymorbisum 
+class Animal():
+    def __init__(self,species, age):
+        self.species = species
+        self.age = age
+
+    def make_sound(self):
+        print("Some generic sound")
+
+class Dog(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+        self.name = name
+
+    def make_sound(self):
+        print(self.name + " says Woof!")
+
+def count_down(n):
+    while n >= 0:
+        print(n)
+        n -= 1
+
+def check_even_odd(num):
+    if num % 2 == 0:
+        print(str(num) + " is Even")
+    else:
+        print(str(num) + " is Odd")
+
+dog1 = Dog("Buddy","3")
+dog1.make_sound()
+
+count_down(3)
+
+for i in range(5):
+    check_even_odd(i)
+
+#loop 
+a = int(input("Enter a value:"))
+for i in range(a,5,-3):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print(" ")
+
+#sample
+def dell(a):
+     for i in range(a):
+         if i <= 77 or i == 1:
+              return -1
+         else:
+              return("i am python", a)
+fiber = dell(7)
+print(fiber)
+
+#function
+def fn(name):
+    name="Amil"
+    print(name+" ")
+
+name="Emil"
+fn(name)
+print(name)
+
+#arguments
+def myf(dell):
+    print(dell+"i5")
+myf("virii")
+myf("bdvg")
+myf("dg")
+
+#number arguments
+def inser(back,front):
+    print(back+ " " +front)
+inser(cndjhu,duvtu)
+
+#arbitiary arguments
+def star(*name)
+    print("gear"+name[2])
+star("sdh","vfhgv","fhfkn")
+
+#keyword
+def h(child1,child4,child3):
+    print(child4)
+h(child3 ="njfh",child1 ="fvihi",child4="kncud")
+
+#error handling
+try:
+   a = int(input())
+   b = int(input())
+   print(C)
+except Execption as e:
+    print("something:",e)
+
+#inhertance
+class gear:
+   def __init__(self,name,gold):
+       self.name = name
+       self.gold = gold
+
+   def display(self):
+       print(self.name,self.gold)
+
+class peace(gear):
+    def __init__(self,name,gold):
+        super().__init__(name,gold)
+
+x = peace("long","note")
+x.display()
+
+#instance
+x = 54
+x ="string"
+print(x)
+
+
+fruits = ("wdu","bannana",'apple')
+x,y,z = fruits
+print(x)
+print(y)
+print(z)
+
+
+a = "hello,world"
+print(a.split(",")
+
+#operators
+a = ((3-7)+(89/20))
+print(a)
+
+
+c = (15 + 3/4*10**2**2)
+print(c
+
+#itertion
+class pen():
+     colour = "red"
+     def __init__(self,brand,size):
+         self.brand  = brand
+         self.size = size
+
+     def oneplus(self):
+         print("name:",self.brand)
+         print("size:",self.size)
+         print("colour:",self.colour)
+
+dell = pen("xo","0.7")
+dell.oneplus()
+
+gear = pen("pencial","1.2")
+gear.oneplus()
+
+sumsung = pen("i5","9.0")
+sumsung.oneplus()
+
+#patten
+n = 5
+for i in range(n):
+    print()
+    for j in range(1,n-i+2):
+        print("*",end = " ")
+
+#loop 
+def passmark(n):
+    if n >= 35:
+        print("pass")
+    else:
+        print("fail")
+t=int(input("Enter a:"))
+passmark(t)
+
+#reaction
+class Animal:
+    def __init__(self, name):
+        self.name = name
+        print(f"Animal named {self.name} is created")
+
+    def sound(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name) 
+        self.breed = breed
+        print(f"Dog of breed {self.breed} is created")
+        
+
+    def sound(self):
+        super().sound()  
+        print("Dog barks")
+
+dog1 = Dog("Buddy", "Golden Retriever")
+dog1.sound()
+
+#special problem 
+a = 5
+for i in range(a,0,-1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    for k in range(1,a+1):
+        print("*",end=" ")
+    print(" ")
+
+

@@ -1,0 +1,45 @@
+# If-Else Condition
+x = 10
+if x > 0:
+    print("Positive")
+elif x == 0:
+    print("Zero")
+else:
+    print("Negative")
+
+# Nested If
+y = 15
+if y > 10:
+    if y < 20:
+        print("Between 10 and 20")
+    else:
+        print("20 or more")
+else:
+    print("10 or less")
+
+# While Loop
+i = 1
+while i <= 5:
+    print("While Loop i:", i)
+    i += 1
+
+# For Loop with range
+for j in range(1, 6):
+    print("For Loop j:", j)
+
+# For Loop through list
+items = ["pen", "book", "pencil"]
+for item in items:
+    print("Item:", item)
+
+# Break in loop
+for k in range(10):
+    if k == 5:
+        break
+    print("Break Loop k:", k)
+
+# Continue in loop
+for m in range(5):
+    if m == 2:
+        continue
+    print("Continue Loop m:", m)

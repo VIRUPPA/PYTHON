@@ -1,0 +1,19 @@
+#variables and data types
+
+x = 54
+x ="string"
+print(x)
+
+
+fruits = ("wdu","bannana",'apple')
+x,y,z = fruits
+print(x)
+print(y)
+print(z)
+
+#operators
+a = int(input("Enter a number:"))
+if a >= 18:
+    print("elegible to vote")
+else:
+    print("not elegible")

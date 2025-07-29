@@ -1,0 +1,30 @@
+#function
+def fn(name):
+    name="Amil"
+    print(name+" ")
+
+name="Emil"
+fn(name)
+print(name)
+
+#arguments
+def myf(dell):
+    print(dell+"i5")
+myf("virii")
+myf("bdvg")
+myf("dg")
+
+#number arguments
+def inser(back,front):
+    print(back+ " " +front)
+inser(cndjhu,duvtu)
+
+#arbitiary arguments
+def star(*name)
+    print("gear"+name[2])
+star("sdh","vfhgv","fhfkn")
+
+#keyword
+def h(child1,child4,child3):
+    print(child4)
+h(child3 ="njfh",child1 ="fvihi",child4="kncud")

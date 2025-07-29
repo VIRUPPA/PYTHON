@@ -1,0 +1,22 @@
+#file handling
+  
+file = open("example.txt", "w")
+file.write("Hello, this is a file example.")
+file.close()
+
+file = open("example.txt", "r")
+content = file.read()
+print("File content:", content)
+file.close()
+
+#error handing 
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num
+    print("Result:", result)
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+except ValueError:
+    print("Invalid input. Please enter a number.")
+finally:
+    print("This block always runs.")
